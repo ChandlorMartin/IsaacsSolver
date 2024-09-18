@@ -4,6 +4,7 @@ LABEL maintainer="isaacssolver"
 
 # set up python environment variables
 ENV PYTHONNUNBUFFER 1
+ENV PYTHONDONTWRITEBYTECODE 1
 
 # update and  install dependencies
 COPY ./requirements.txt /requirements.txt
@@ -21,3 +22,5 @@ RUN python -m venv /py && \
 ENV PATH="/py/bin:$PATH"
 
 USER app
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.wsgi:application"]

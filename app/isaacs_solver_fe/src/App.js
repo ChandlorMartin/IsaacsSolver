@@ -4,6 +4,8 @@ import {createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import Navbar from './components/navbar/Navbar';
+import { MathJaxContext } from 'better-react-mathjax';
+
 
 
 const mainTheme = createTheme({
@@ -18,11 +20,11 @@ const mainTheme = createTheme({
   },
   palette: {
     background: {
-        default: '#000000',
+        default: '#ffffff',
         secondary: "#414141"
     },
     text: {
-      primary: '#ffffff',
+      primary: '#000000',
       secondary: '#cccccc'
     }
   }
@@ -31,10 +33,12 @@ const mainTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={mainTheme}>
-      <CssBaseline />
-      <div className="App" style={{backgroundColor: 'inherit'}}>
-          <Navbar />
-      </div>
+      <MathJaxContext>
+        <CssBaseline />
+          <div className="App" style={{backgroundColor: 'inherit'}}>
+            <Navbar />
+          </div>
+      </MathJaxContext>
     </ThemeProvider>
   );
 }

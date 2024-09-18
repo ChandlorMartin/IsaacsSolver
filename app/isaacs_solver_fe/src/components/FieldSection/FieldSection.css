@@ -1,0 +1,67 @@
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) 
+{
+    /* No changes needed */
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px)
+{
+    /* No changes needed */
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px)
+{
+    .Units {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        width: 200px;
+    }
+
+    .FieldSection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center
+    }
+
+    .FieldSection .FieldName {
+        width: 200px;
+        justify-self: left;
+    }
+
+    
+    .FieldSection label {
+        width: 20%;
+        font-size: large;
+    }
+    
+    .FieldSection input {
+        width: 200px;
+
+    }
+
+    .FieldSection text {
+        font-size: 24px;
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px)
+{
+    .FieldSection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start; /* Align items to the left */
+    }
+    
+    .FieldSection label {
+        width: 20%;
+    }
+    
+    .FieldSection input {
+        width: 20%;
+    }
+}

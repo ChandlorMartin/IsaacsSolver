@@ -2,7 +2,12 @@ services:
   app:
     build:
       context: .
+      dockerfile: Dockerfile
+    expose:
+      - 80
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
     ports:
-      - 8000:8000
-    volumes:
-      - ./app:/app
+      - 80:80

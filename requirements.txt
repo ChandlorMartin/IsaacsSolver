@@ -4,7 +4,6 @@ django-cors-headers==4.4.0
 djangorestframework==3.15.2
 gunicorn==23.0.0
 python-decouple==3.8
-pywin32==306
 pyzmq==25.1.2
 sqlparse==0.4.4
 typing_extensions==4.4.0

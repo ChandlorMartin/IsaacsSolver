@@ -1,6 +1,7 @@
 import HomePage from '../../pages/Home'
 import KinematicsPage from '../../pages/Kinematics'
 import ThermodynamicsPage from '../../pages/Thermodynamics'
+import AverageSpeedPage from '../../pages/kinematics/AverageSpeed'
 import { BrowserRouter, Navigate, NavLink, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import { ReactComponent as Hamburger } from "../../HamburgerIcon.svg"
@@ -29,7 +30,7 @@ const Navbar = () => {
                   <NavLink to="/">Home</NavLink>
                 </li>    
                 <li>
-                  <NavLink to="/Kinematics" >Kinematics</NavLink>
+                  <NavLink to="/Kinematics">Kinematics</NavLink>
                 </li>    
                 <li>
                   <NavLink to="/Thermodynamics">Thermodynamics</NavLink>
@@ -40,7 +41,10 @@ const Navbar = () => {
         </nav>
         <Routes> 
           <Route path="/" element={<HomePage />}></Route>
-          <Route path="/Kinematics" element={<KinematicsPage />}></Route>
+          <Route path="/Kinematics" element={<KinematicsPage />}>
+            <Route index element={<KinematicsPage />} />
+            <Route path="AverageSpeed" element={<AverageSpeedPage />} />
+          </Route>
           <Route path="/Thermodynamics" element={<ThermodynamicsPage />}/>
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
