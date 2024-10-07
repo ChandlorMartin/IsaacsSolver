@@ -100,10 +100,14 @@ class CalculateAverageSpeed(APIView):
                 if containsKey(error_messages, "__all__"):
                     non_field_errors = error_messages["__all__"]
 
+                print(non_field_errors)
+
                 
                 average_speed = form.data.get('average_speed')
                 distance = form.data.get('distance')
                 time_interval = form.data.get('time_interval')
+
+                print
                 
                 context = { "distance": distance, "distanceUnit":distance_unit, "distanceError": distance_error, 
                             "timeInterval": time_interval, "timeIntervalUnit": time_interval_unit,"timeIntervalError": time_interval_error,

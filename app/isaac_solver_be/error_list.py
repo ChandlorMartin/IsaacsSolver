@@ -14,6 +14,6 @@ def get_error_message(error_number, form_field_name_one="", form_field_name_two=
         case 4:
             return "Error: All fields must have the same number of elements."
         case 101:
-            return "Error: The " + form_field_name_one + " cannot be 0 when calculating the " + form_field_name_one +"."
+            return "Error: The " + form_field_name_one + " cannot be 0 when calculating the " + form_field_name_two + "."
         case _:
             return "DEFAULT ERROR"

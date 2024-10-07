@@ -1,29 +1,29 @@
 /*Mobile small*/
 @media only screen and (min-width: 320px) 
 {
-    .FieldSectionSingle {
+    .FieldSectionTwo {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-between;
         box-sizing: border-box;
     }
-    .FieldSectionSingleName {
+    .FieldSectionDoubleName {
         width:100vw;
         justify-self: left;
         font-size: 16px;
         font-weight: bold;
     }
-    .FieldSectionSingleInput {
+    .FieldSectionDoubleInput {
         width: 45vw;
         height: 40px;
         font-size: 12px;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 5px;
         margin-right: 5px;
         margin-left: 5vw;
         border: 1px solid #000;
         border-radius: 5px 5px 5px 5px;
     }
-    .FieldSectionSingleUnitContainer {
+    .FieldSectionDoubleUnitsContainer {
         display: flex;
         justify-content: left;
         width: 40vw;
@@ -31,7 +31,8 @@
         margin-right: 5vw;
         font-size: 28px;
     }
-    .UnitBoxSetOne {
+    .UnitBoxSetTwo {
+        font-size: 12px;
         .react-select__control {
             height: 40px;
             width: 60px;
@@ -41,7 +42,6 @@
             font-size: 12px;
         }
         .react-select__value-container {
-            font-size: 12px;
             padding: 0px 0px 0px 0px;
         }
         .react-select__indicators {
@@ -60,32 +60,32 @@
     }
 }
 
-/*Mobile medium*/
+/*Mobile small*/
 @media only screen and (min-width: 375px) 
 {
-    .FieldSectionSingle {
+    .FieldSectionTwo {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-between;
         box-sizing: border-box;
     }
-    .FieldSectionSingleName {
+    .FieldSectionDoubleName {
         width:100vw;
         justify-self: left;
         font-size: 16px;
         font-weight: bold;
     }
-    .FieldSectionSingleInput {
+    .FieldSectionDoubleInput {
         width: 45vw;
         height: 40px;
         font-size: 12px;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 5px;
         margin-right: 5px;
         margin-left: 5vw;
         border: 1px solid #000;
         border-radius: 5px 5px 5px 5px;
     }
-    .FieldSectionSingleUnitContainer {
+    .FieldSectionDoubleUnitsContainer {
         display: flex;
         justify-content: left;
         width: 40vw;
@@ -93,7 +93,8 @@
         margin-right: 5vw;
         font-size: 28px;
     }
-    .UnitBoxSetOne {
+    .UnitBoxSetTwo {
+        font-size: 12px;
         .react-select__control {
             height: 40px;
             width: 60px;
@@ -103,7 +104,6 @@
             font-size: 12px;
         }
         .react-select__value-container {
-            font-size: 12px;
             padding: 0px 0px 0px 0px;
         }
         .react-select__indicators {
@@ -125,13 +125,13 @@
 /*Mobile large*/
 @media only screen and (min-width: 425px) 
 {
-    .FieldSectionSingle {
+    .FieldSectionTwo {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-between;
         box-sizing: border-box;
     }
-    .FieldSectionSingleName {
+    .FieldSectionDoubleName {
         width:25vw;
         justify-self: left;
         padding: 0px 0px 0px 0px;
@@ -140,7 +140,7 @@
         margin-right: 0vw;
         font-weight: bold;
     }
-    .FieldSectionSingleInput {
+    .FieldSectionDoubleInput {
         width: 40vw;
         height: 40px;
         font-size: 16px;
@@ -150,15 +150,15 @@
         border: 1px solid #000;
         border-radius: 5px 5px 5px 5px;
     }
-    .FieldSectionSingleUnitContainer {
+    .FieldSectionDoubleUnitsContainer {
         display: flex;
-        justify-content: left;
         width: 34vw;
         height: 40px;
         margin-right: 0vw;
         font-size: 28px;
     }
-    .UnitBoxSetOne {
+    .UnitBoxSetTwo {
+        font-size: 12px;
         .react-select__control {
             height: 40px;
             width: 65px;
@@ -168,8 +168,8 @@
             font-size: 16px;
         }
         .react-select__value-container {
-            font-size: 16px;
             padding: 0px 0px 0px 0px;
+            font-size: 16px;
         }
         .react-select__indicators {
             .react-select__indicator-separator {
@@ -190,13 +190,13 @@
 /*Tablet*/
 @media only screen and (min-width: 768px) 
 {
-    .FieldSectionSingle {
+    .FieldSectionTwo {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-between;
         box-sizing: border-box;
     }
-    .FieldSectionSingleName {
+    .FieldSectionDoubleName {
         width:25vw;
         justify-self: left;
         padding: 0px 0px 0px 0px;
@@ -205,7 +205,7 @@
         margin-right: 0vw;
         font-weight: bold;
     }
-    .FieldSectionSingleInput {
+    .FieldSectionDoubleInput {
         width: 40vw;
         height: 40px;
         font-size: 20px;
@@ -215,15 +215,17 @@
         border: 1px solid #000;
         border-radius: 5px 5px 5px 5px;
     }
-    .FieldSectionSingleUnitContainer {
+    .FieldSectionDoubleUnitsContainer {
         display: flex;
-        justify-content: left;
         width: 34vw;
         height: 40px;
         margin-right: 0vw;
-        font-size: 28px;
     }
-    .UnitBoxSetOne {
+    .UnitDivisor{
+        font-size: 34px;
+    }
+    .UnitBoxSetTwo {
+        font-size: 20px;
         .react-select__control {
             height: 40px;
             width: 70px;
@@ -233,8 +235,8 @@
             font-size: 20px;
         }
         .react-select__value-container {
-            font-size: 20px;
             padding: 0px 0px 0px 0px;
+            font-size: 20px;
         }
         .react-select__indicators {
             .react-select__indicator-separator {
@@ -256,13 +258,13 @@
 /*Laptops*/
 @media only screen and (min-width: 1024px)
 {
-    .FieldSectionSingle {
+    .FieldSectionTwo {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-between;
         box-sizing: border-box;
     }
-    .FieldSectionSingleName {
+    .FieldSectionDoubleName {
         width:25vw;
         justify-self: left;
         padding: 0px 0px 0px 0px;
@@ -271,7 +273,7 @@
         margin-right: 0vw;
         font-weight: bold;
     }
-    .FieldSectionSingleInput {
+    .FieldSectionDoubleInput {
         width: 40vw;
         height: 40px;
         font-size: 24px;
@@ -281,26 +283,29 @@
         border: 1px solid #000;
         border-radius: 5px 5px 5px 5px;
     }
-    .FieldSectionSingleUnitContainer {
+    .FieldSectionDoubleUnitsContainer {
         display: flex;
         justify-content: left;
         width: 34vw;
         height: 40px;
         margin-right: 0vw;
     }
-    .UnitBoxSetOne {
+    .UnitDivisor{
+        font-size: 36px;
+    }
+    .UnitBoxSetTwo {
         .react-select__control {
             height: 40px;
             width: 80px;
-            border: 1px solid #f52222;
+            border: 1px solid #000;
+            font-size: 24px;
         }
         .react-select__option {
             font-size: 24px;
         }
         .react-select__value-container {
-            font-size: 24px;
             padding: 0px 0px 0px 0px;
-            
+            font-size: 24px;
         }
         .react-select__indicators {
             .react-select__indicator-separator {
@@ -316,6 +321,7 @@
             }
         }        
     }
+    
 }
 
 

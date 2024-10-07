@@ -66,7 +66,7 @@ class AverageSpeedForm(forms.Form):
     # This returns the value being solved for as a string
     def choose_equation(self, data, key_count):
         keys = data.keys()
-        if key_count == 3:
+        if key_count == 7:
             if data["average_speed"] is None:
                 return "Average Speed"
             if data["time_interval"] is None:

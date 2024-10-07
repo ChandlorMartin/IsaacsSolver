@@ -1,16 +1,15 @@
-import HomePage from '../../pages/Home'
-import KinematicsPage from '../../pages/Kinematics'
-import ThermodynamicsPage from '../../pages/Thermodynamics'
-import AverageSpeedPage from '../../pages/kinematics/AverageSpeed'
-import { BrowserRouter, Navigate, NavLink, Routes, Route } from 'react-router-dom'
-import { useEffect, useState } from "react";
+import HomePage from "../../pages/Home"
+import KinematicsPage from "../../pages/Kinematics"
+import ThermodynamicsPage from "../../pages/Thermodynamics"
+import AverageSpeedPage from "../../pages/kinematics/AverageSpeedPage"
+import { BrowserRouter, Navigate, NavLink, Routes, Route } from "react-router-dom"
+import { useState } from "react"
 import { ReactComponent as Hamburger } from "../../HamburgerIcon.svg"
-import {useTheme} from '@mui/material/styles'
-import './navbar.css'
-
+import {useTheme} from "@mui/material/styles"
+import "./navbar.css"
 
 const Navbar = () => {
-  const theme = useTheme();
+  const theme = useTheme()
   const [showNavbar, setShowNavbar] = useState(false)
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
@@ -19,27 +18,27 @@ const Navbar = () => {
   return (
     <BrowserRouter>
       <div>
-        <nav className="navbar" style={{backgroundColor: theme.palette.background.secondary}}>
+        <nav className="navbar" style={{backgroundColor : theme.palette.background.secondary}}>
           <div className="container">
             <div className="menu-icon" onClick={handleShowNavbar}>
               <Hamburger />
             </div>
-            <div className={`nav-elements  ${showNavbar && 'active'}`}>
+            <div className={`nav-elements  ${showNavbar && "active"}`}>
               <ul>
                 <li>
                   <NavLink to="/">Home</NavLink>
-                </li>    
+                </li>
                 <li>
                   <NavLink to="/Kinematics">Kinematics</NavLink>
-                </li>    
+                </li>
                 <li>
                   <NavLink to="/Thermodynamics">Thermodynamics</NavLink>
-                </li>    
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-        <Routes> 
+        <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/Kinematics" element={<KinematicsPage />}>
             <Route index element={<KinematicsPage />} />
@@ -52,5 +51,5 @@ const Navbar = () => {
     </BrowserRouter>
   )
 }
-  
+
 export default Navbar

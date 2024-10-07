@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) 
+{
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px)
+{
+
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px)
+{
+
+}
+
+/* 1280pxpx */
+@media only screen and (min-width: 1280px)
+{
+}
+
+
+/* 4K 2560px */
+@media only screen and (min-width: 2560px)
+{
+  
+}

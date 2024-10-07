@@ -96,9 +96,9 @@ def is_possible(self, form_name, equation_type, data):
     match form_name:
         case "Average Speed Form":
             if equation_type == "Average Speed" and data["time_interval"] == str(0):
-                self.add_error(None, get_error_message(101, "time interval", "average speed"))
+                self.add_error("time_interval", get_error_message(101, "time interval", "average speed"))
             elif equation_type == "Time Interval" and data["average_speed"] == str(0):
-                self.add_error(None, get_error_message(101, "average speed", "time interval"))
+                self.add_error("average_speed", get_error_message(101, "average speed", "time interval"))
         case "Linear Thermal Expansion Form":
             print_item("data", data)
             if equation_type == "Length" and data["temperature_change"] == str(0):
