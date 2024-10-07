@@ -54,7 +54,7 @@ const AverageSpeedPage = () =>{
   const [distanceError, setDistanceError] = useState("")
   const [nonFieldErrors, setNonFieldErrors] = useState("")
 
-  let url = "http://localhost/calculate_average_speed/"
+  let url = "http://18.232.116.203/calculate_average_speed/"
 
   const handleSubmit = async (e) => {
     e.preventDefault()
