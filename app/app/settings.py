@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [config('ALLOWED_HOSTS')]
-
+CORS_ALLOWED_ORIGINS = [config('CORS_ALLOWED_ORIGINS')]
 
 # Application definition
 
@@ -54,10 +54,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-]
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
 ]
 
 ROOT_URLCONF = "app.urls"
